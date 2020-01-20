@@ -23,8 +23,8 @@ class ProfileData extends Component {
     render() {
         return (
             <React.Fragment>
-                <p className="text-md-left">Bienvenido {this.props.name}</p>
-                <p className="text-md-right">Puntos {this.props.points}</p>
+                <p className="float-left">Bienvenido {this.props.name}</p>
+                <p className="float-right">Puntos {this.props.points}</p>
             </React.Fragment>
         );
     }

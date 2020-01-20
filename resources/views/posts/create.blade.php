@@ -9,10 +9,10 @@
             <div class="col-8 offset-2">
 
                 <div class="row">
-                    <h1>Add New Post</h1>
+                    <h1>Subir producto</h1>
                 </div>
                 <div class="form-group row">
-                    <label for="title" class="col-md-4 col-form-label">Post Caption</label>
+                    <label for="title" class="col-md-4 col-form-label">Titulo</label>
 
                     <input id="title"
                            type="text"
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="row">
-                    <label for="path" class="col-md-4 col-form-label">Post Image</label>
+                    <label for="path" class="col-md-4 col-form-label">Imagen</label>
 
                     <input type="file" class="form-control-file" id="path" name="path">
 
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="row pt-4">
-                    <button class="btn btn-primary">Add New Post</button>
+                    <button class="btn btn-primary">Agregar</button>
                 </div>
 
             </div>

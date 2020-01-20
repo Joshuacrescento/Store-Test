@@ -3,13 +3,13 @@
 @section('content')
 
 <div class="container"> 
-            
-                <form action="/p" method="post">
-            @csrf
-
-                        <p>MI CODES</p>
-
-                </form>
-            
+<?php foreach($user->coupons as $item): ?>
+                    <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Codigo:    {{$item->coupon}}</h5>
+                        <p class="card-text">Puntos:    {{$item->points}}</p>
+                    </div>
+                    </div>
+    <?php endforeach; ?>
             </div>
 @endsection

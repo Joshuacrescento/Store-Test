@@ -13,7 +13,7 @@
                             <div class="col-md-6">
                                 <input id="text" type="text" class="form-control" name="coupon" required/>
                             </div>
-
+                            <label for="text" class="col-md-4 col-form-label text-md-right">PUNTOS</label>
                             <div class="col-md-6">
                                 <input id="number" type="number" class="form-control" name="points" required/>
                             </div>

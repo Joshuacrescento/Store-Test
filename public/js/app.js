@@ -69778,9 +69778,9 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-md-left"
+        className: "float-left"
       }, "Bienvenido ", this.props.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-md-right"
+        className: "float-right"
       }, "Puntos ", this.props.points));
     }
   }]);

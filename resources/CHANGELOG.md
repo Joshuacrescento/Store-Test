@@ -11,3 +11,9 @@ All notable changes to this project will be documented in this file.
 - Controllers for Posts, Users, InfoProfile
 - Routes to all the blades
 
+## [1.0.1] - 2020-01-19
+### Added
+-Diseño mejorado
+-creacion de ultimas tablas
+-Afinado de rutas
+
