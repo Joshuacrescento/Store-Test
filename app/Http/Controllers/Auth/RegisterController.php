@@ -8,6 +8,7 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
 {
@@ -29,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+   
 
     /**
      * Create a new controller instance.
@@ -40,6 +41,12 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
+
+    public function redirectTo()
+{
+    $user = Auth::user()->id;
+    return "profile/{$user}";
+}
 
     /**
      * Get a validator for an incoming registration request.

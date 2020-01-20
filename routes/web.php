@@ -12,9 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth\login');
 });
-
+Route::get('/login', function () {
+    return view('auth\login');
+});
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/prod/create', 'PostsController@create');
+Route::get('/p/create', 'CouponsController@create');
+Route::post('/p', 'CouponsController@store');
+Route::post('/prod', 'PostsController@store');
+Route::get('/codes/{user}', 'CouponsController@show');
+Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
